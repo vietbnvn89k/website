@@ -1,0 +1,532 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Roboto-black;
+    src: url(./font/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-regular;
+    src: url(./font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url(./font/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-thin;
+    src: url(./font/Roboto-Thin.ttf);
+}
+
+/* --------------------------------icon--------------------------------- */
+#checkbox {
+    position: absolute;
+    left: 86%;
+    top: 10px;
+}
+
+.fa-facebook {
+    color: aqua;
+    position: relative;
+}
+
+#li-group:hover #menu-facebook {
+    display: block;
+}
+
+#li-group #menu-facebook {
+    width: 800px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    background-image: url(./index/img/facebook.png);
+    background-repeat: no-repeat;
+    left: 180px;
+    top: 0px;
+    transition: 1s;
+    
+}
+
+#menu-facebook:hover {
+    transform: scale(1.5);
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 30px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+#li-youtube:hover #menu-youtube {
+    display: block;
+}
+
+#menu-youtube {
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    width: 560px; 
+    height: 340px;
+    transition: 1s;
+}
+
+#menu-youtube:hover {
+    transform: scale(1.5);
+    margin-left: 140px;
+}
+
+.fa-magnifying-glass {
+    font-size: 25px;
+    color: white;
+    float: right;
+    padding: 7.5px 15px;
+    position: relative;
+}
+
+#input {
+    display: none;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    animation: animation-searchOpen 1s;
+}
+
+@keyframes animation-searchOpen {
+    0% { width: 0px; height: 0px;}
+    100% {width: 200px;height: 35px;}
+}
+
+#input.open {
+    display: block;
+}
+
+.fa-bell {
+    font-size: 25px;
+    color: white;
+    float: right;
+    padding: 7.5px 15px;
+    position: relative;
+}  
+
+.background-bell {
+    display: none;
+    background: white;
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    position: absolute;
+    border-radius: 10%;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    right: -8px;
+    transition: 1s;
+    animation: animation-bellOpen 1s;
+}
+
+@keyframes animation-bellOpen {
+    0% { width: 0px; height: 0px;}
+    100% {width: 400px;height: 300px;}
+}
+
+.background-bell.open {
+    display: block;
+}
+
+.background-bell:hover {
+    transform: scale(1.5);
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.fa-bell:hover,
+.fa-magnifying-glass:hover {
+    color: black;
+    background-color: red;
+}
+
+/* .ti-arrow-circle-down {
+    position: absolute;
+    color: white;
+    right: 50%;
+    
+} */
+
+/* ------------------------------------------------------------------- */
+#header {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 5;
+    font-family: Roboto-regular;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #DCDCDC;
+    font-size: 20px;
+    padding: 0px 30px; 
+    line-height: 40px;
+}
+
+#nav > li:hover > a {
+    color: black;
+    background-color: #DCDCDC;
+    display: inline-block;
+    transition: 1s ease;
+}
+
+#more {
+    position: relative;
+}
+
+#subnav.open {
+    display: block;
+    animation: animation-subnav 1s normal;
+}
+
+@keyframes animation-subnav {
+    0% {
+        width: 180px;
+        height: 0px;
+    }
+    100% {
+        width: 180px;
+        height: 80px;
+    }
+}
+
+#more > a {
+    pointer-events: none;
+} 
+
+#subnav li:hover{
+    background-color: #DCDCDC;
+}
+
+#subnav li:hover a{
+    color: black
+}
+
+#subnav {
+    display: none;
+    width: 180px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0px;
+    border-radius: 5%;
+} 
+
+#li-home {
+    position: relative;
+}
+
+#li-home a::after {
+    content: '';
+    height: 4px;
+    width: 0px;
+    background-color: rgb(238, 255, 0);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+#li-home a:hover::after {
+    width: 100%;
+}
+
+#li-comment {
+    position: relative;
+}
+
+#li-comment a::after {
+    content: '';
+    height: 4px;
+    width: 0px;
+    background-color: rgb(0, 247, 255);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+#li-comment a:hover::after {
+    width: 100%;
+}
+
+#accept {
+    display: none;
+}
+
+.check {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #f97316;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    left: 50%;
+}
+
+#accept:checked ~ .check {
+    background-color: #fff;
+}
+
+.check::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+#accept:checked ~ .check::before {
+    transform: translateX(-50px);
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #f97316;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    transform: translateX(50px);
+}
+
+#accept:checked ~ .check::after {
+    transform: translateX(0px);
+}
+
+/* ------------------------------index.html------------------------------------- */
+#slider {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./index/img/nen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#coat {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#hover {
+    width: 5px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#hover:hover {
+    animation: animation-hover 1s;
+    width: 400px;
+    height: 100%;
+}
+
+#hover:hover #video-hover {
+    display: block;
+}
+
+@keyframes animation-hover {
+    0% {
+        width: 5px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        width: 400px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+#video-hover {
+    width: 400px;
+    height: 250px;
+    display: none;
+}
+
+/* ------------------------------------------------------------------- */
+#infomation {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: Roboto-thin;
+}
+
+#infomation h2 {
+    padding: 20px 0px 0px 0px;
+    font-size: 35px;
+}
+
+#infomation h3 {
+    font-style: italic;
+    font-size: 15px;
+}
+
+#infomation h4 {
+    padding: 10px 30px;
+}
+
+#figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+.character {
+    margin: 10px 30px;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    background: url(./index/img/hinh-nen-den-17.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+.character::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -20px;
+    content: '';
+    transition: 1s;
+}
+
+.character:hover::after {
+    transform: scale(1.1);
+}
+
+#allain::after {
+    background: url(./index/img/Allain-removebg-preview.png);
+}
+
+#bright::after {
+    background: url(./index/img/Bright-removebg-preview.png);
+}
+
+#enzo::after {
+    background: url(./index/img/Enzo-removebg-preview.png);
+}
+
+/* ------------------------------------------------------------------- */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* ------------------------------------------------------------------- */
+#footer {
+    width: 100%;
+    height: 100%;
+    background-color: #181821;
+    font-family: Roboto-regular;
+}
+
+#list-footer > li {
+    text-align: center;
+    width: 310px;
+    height: 333px;
+    margin-top: 70px;
+}
+
+#list-footer {
+    display: flex;
+}
+
+#list-one {
+    flex: 1;
+    justify-content: center;
+}
+
+#list-two {
+    flex: 1;
+    justify-content: center;
+}
+
+#list-three {
+    flex: 1;
+    justify-content: center;
+}
+
+.title-footer {
+    color: white;
+}
+
+.footer
+{
+    color: #ccc;
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+}
+
+#icon li i {
+    color: white;
+    font-size: 30px;
+    margin: 0px 5px;
+    position: relative;
+    bottom: 80px;
+}
