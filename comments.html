@@ -11,27 +11,23 @@
 <body>
     <div id="home-comments">
         <div id="header">
-            <label id="checkbox">
-                <input id="accept" type="checkbox">
-                <span class="check"></span>
-            </label>
-            <i class="fa-solid fa-magnifying-glass">
-                <input id="input" type="input">
-            </i>      
-            <i class="fa-solid fa-bell"><div class="background-bell"></div></i>
-            <ul id="nav">
-                <li id="li-home"><a href="./index.html">Home <i class="fa-solid fa-house-chimney"></i></a></li>
-                <li id="li-comment"><a href="./comments.html">Comment <i class="fa-solid fa-comment"></i></a></li>
-                <li id="more">
-                    <a href="">More <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul id="subnav">
-                        <li id="li-group"><a href="https://www.facebook.com/groups/1156197571684509">Group <i class="fa-brands fa-facebook"></i></a> <div id="menu-facebook"></div></li>
-                        <li id="li-youtube"><a href="https://www.youtube.com/channel/UCp9s-j8TBkS5prHAPXQTIWg">Youtube <i class="fa-brands fa-youtube"></i></a>
-                            <iframe id="menu-youtube" width="560" height="315" src="https://www.youtube.com/embed/EkPD_zbbj5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <i class="avatar" id="icon"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm trên Website">
+            <div id="Part2-header">
+                <i class="fa-solid fa-house">
+                    <div class="recommend"><h5>Trang chủ</h5></div>
+                </i>
+                <i class="fa-solid icon-header fa-tv">
+                    <div class="recommend"><h5>Watch</h5></div>
+                </i>
+                <i class="fa-solid icon-header fa-store">
+                    <div class="recommend"><h5>Marketplace</h5></div>
+                </i>
+                <i class="fa-solid icon-header fa-users-rectangle">
+                    <div class="recommend"><h5>Nhóm</h5></div>
+                </i>
+            </div>
         </div>
 
         <div id="content">
@@ -95,9 +91,9 @@
             <div id="Part-2">
                 <div id="news">
                     <ul id="Part1-news">
-                        <li id="new-open"><i class="fa-solid fa-book-open"></i> Tin</li>
-                        <li id="reels-open"><i class="fa-solid fa-clapperboard"></i> Reels</li>
-                        <li id="meeting-open"><i class="fa-solid fa-video"></i> Phòng họp mặt</li>
+                        <li class="new-part1" id="new-open"><i class="fa-solid fa-book-open"></i> Tin</li>
+                        <li class="new-part1" id="reels-open"><i class="fa-solid fa-clapperboard"></i> Reels</li>
+                        <li class="new-part1" id="meeting-open"><i class="fa-solid fa-video"></i> Phòng họp mặt</li>
                     </ul>
 
                     <div id="Part2-news">
@@ -143,7 +139,7 @@
                 <div id="suggest">
                     <div id="Part1-suggest">
                         <i class="avatar" id="avatar-suggest"></i>
-                        <input type="text">
+                        <input placeholder="Bạn đang nghĩ gì thế ?" type="text">
                     </div>
                     <div id="Part2-suggest">
                         <div id="livevideo">
@@ -191,7 +187,7 @@
                     </div>
                     <div id="Part5-posts">
                         <i class="avatar" id="avatar-posts-2"></i>
-                        <input id="input-posts" placeholder="Click để bình luận" type="text">
+                        <input id="input-posts" placeholder="Hãy để lại 1 bình luận" type="text">
                     </div>
                     <div class="fb-comments" data-href="http://127.0.0.1:5500/comments.html" data-width="676" data-numposts="5"></div>
                 </div>
@@ -216,9 +212,8 @@
             </div>
         </div>
     </div>
-
+    <script src="./comments.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="fRt0n8JZ"></script>
-    <script src="./comments.js"></script>
 </body>
 </html>
