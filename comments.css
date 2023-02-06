@@ -94,6 +94,7 @@ input::placeholder {
     cursor: pointer;
     position: relative;
     font-weight: lighter;
+    background-color:#1B74E4;
 }
 
 .fa-house::after {
