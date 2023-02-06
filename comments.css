@@ -202,10 +202,29 @@ input::placeholder {
 }
 
 #toolbar i {
-    color: rgb(0, 174, 255);
     font-size: 20px;
     position: absolute;
     margin: 10px 15px;
+}
+
+.fa-user-group {
+    color: rgb(0, 174, 255);
+}
+
+.fa-people-group {
+    color:crimson;
+}
+
+.fa-clock-rotate-left {
+    color: rgb(95, 95, 95);
+}
+
+.fa-film {
+    color: darkgoldenrod;
+}
+
+.fa-angles-down {
+    color:purple;
 }
 
 #toolbar {
