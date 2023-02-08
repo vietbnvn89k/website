@@ -105,3 +105,14 @@ function OpenMeetingOpen(){
 }
 meetingOpen.addEventListener('click', OpenMeetingOpen)
 
+const inputHeader = document.querySelector('#input-header')
+const icon = document.querySelector('#icon')
+const arrow = document.querySelector('#arrow')
+const boxInput = document.querySelector('#box-input')
+inputHeader.addEventListener('click', OpenInputHeader)
+function OpenInputHeader() {
+    boxInput.classList.toggle('open')
+    icon.classList.toggle('remove')
+    inputHeader.classList.toggle('open')
+    arrow.classList.toggle('open')
+}
