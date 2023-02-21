@@ -42,7 +42,7 @@
     height: 400px;
     display: none;
     position: absolute;
-    background-image: url(./index/img/facebook.png);
+    background-image: url(./img/facebook.png);
     background-repeat: no-repeat;
     left: 180px;
     top: 0px;
@@ -326,7 +326,7 @@
 #slider {
     width: 100%;
     height: 100vh;
-    background-image: url(./index/img/nen.jpg);
+    background-image: url(./img/nen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -410,7 +410,7 @@
     width: 300px;
     height: 350px;
     border-radius: 10%;
-    background: url(./index/img/hinh-nen-den-17.jpg);
+    background: url(./img/hinh-nen-den-17.jpg);
     position: relative;
     overflow: hidden;
 }
@@ -429,15 +429,15 @@
 }
 
 #allain::after {
-    background: url(./index/img/Allain-removebg-preview.png);
+    background: url(./img/Allain-removebg-preview.png);
 }
 
 #bright::after {
-    background: url(./index/img/Bright-removebg-preview.png);
+    background: url(./img/Bright-removebg-preview.png);
 }
 
 #enzo::after {
-    background: url(./index/img/Enzo-removebg-preview.png);
+    background: url(./img/Enzo-removebg-preview.png);
 }
 
 /* ------------------------------------------------------------------- */

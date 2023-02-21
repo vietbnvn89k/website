@@ -42,7 +42,7 @@
 #icon {
     width: 40px;
     height: 40px;
-    background: url(./comments/img/fb_icon_325x325.png);
+    background: url(./img/avatar.jpg);
     background-size: cover;
     left: 20px;
 }
@@ -317,7 +317,7 @@
     width: 35px;
     height: 35px;
     margin: 2.5px 10px;
-    background: url(./comments/img/avatar.jpg);
+    background: url(./img/avatar.jpg);
     background-size: cover;
 }
 
@@ -352,15 +352,15 @@
 }
 
 #avatar-group-1 {
-    background-image: url(./comments/img/f8.jpg);
+    background-image: url(./img/f8.jpg);
 }
 
 #avatar-group-2 {
-    background-image: url(./comments/img/hội\ thất\ nghiệp.jpg);
+    background-image: url(./img/hội\ thất\ nghiệp.jpg);
 }
 
 #avatar-group-3 {
-    background-image: url(./comments/img/font-end.jpg);
+    background-image: url(./img/font-end.jpg);
 }
 
 /* ----------------------------------part2--------------------------------- */
@@ -489,7 +489,7 @@
 #avatar-new-1 {
     width: 100%;
     height: 70%;
-    background: url(./comments/img/avatar.jpg);
+    background: url(./img/avatar.jpg);
     background-size: cover;
 }
 
@@ -517,17 +517,17 @@
 }
 
 #avatar-2 {
-    background: url(./comments/img/avatar-user-4.jpg);
+    background: url(./img/avatar-user-4.jpg);
     background-size: cover;
 }
 
 #avatar-3 {
-    background: url(./comments/img/avatar-user-1.jpg);
+    background: url(./img/avatar-user-1.jpg);
     background-size: cover;
 }
 
 #avatar-4 {
-    background: url(./comments/img/avatar-user-3.jpg);
+    background: url(./img/avatar-user-3.jpg);
     background-size: cover;
 }
 
@@ -665,7 +665,7 @@
 }
 
 #avatar-suggest {
-    background: url(./comments/img/avatar.jpg);
+    background: url(./img/avatar.jpg);
     background-size: cover;
     margin: 10px;
     width: 45px;
@@ -703,7 +703,7 @@
 }
 
 #avatar-posts-1 {
-    background: url(./comments/img/avatar-post.jpg);
+    background: url(./img/avatar-post.jpg);
     width: 45px;
     height: 45px;
     background-size: cover;
@@ -739,7 +739,7 @@
 }
 
 #Part3-posts {
-    background: url(./comments/img/image-posts.jpg);
+    background: url(./img/image-posts.jpg);
     background-size: cover;
     height: 60%;
     width: 100%;
@@ -822,7 +822,7 @@
 #avatar-posts-2 {
     width: 40px;
     height: 40px;
-    background: url(./comments/img/avatar.jpg);
+    background: url(./img/avatar.jpg);
     background-size: cover;
     position: absolute;
     left: 20px;
@@ -837,16 +837,46 @@
     position: relative;
 }
 
-#Part-3 > h4 {
-    border-bottom: rgb(204, 204, 204) 1px solid;
+#ads {
+    width: 100%;
+    height: 150px;
+}
+
+#ads > h4 {
     width: 275px;
     float: right;
     font-size: 20px;
     padding: 15px 10px;
 }
 
+#ads-2 {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#ads-2 div {
+    height: 100%;
+    width: 80px;
+    background: url(./img/ads-1.jpg);
+    background-size: cover;
+}
+
+#ads-2 h4 {
+    font-size: 20px;
+    position: absolute;
+    left: 100px;
+    top: 40%;
+    transform: translateY(-50);
+}
+
 #contact {
+    border-top: rgb(204, 204, 204) 1px solid;
     float: right;
+    width: 100%;
+    height: 300px;
 }
 
 #lienhe li {
@@ -868,10 +898,10 @@
 }
 
 
-#avatar-user-1 {width: 35px; height: 35px; background: url(./comments/img/avatar-user-1.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
-#avatar-user-2 {width: 35px; height: 35px; background: url(./comments/img/avatar-user-2.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
-#avatar-user-3 {width: 35px; height: 35px; background: url(./comments/img/avatar-user-3.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
-#avatar-user-4 {width: 35px; height: 35px; background: url(./comments/img/avatar-user-4.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
+#avatar-user-1 {width: 35px; height: 35px; background: url(./img/avatar-user-1.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
+#avatar-user-2 {width: 35px; height: 35px; background: url(./img/avatar-user-2.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
+#avatar-user-3 {width: 35px; height: 35px; background: url(./img/avatar-user-3.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
+#avatar-user-4 {width: 35px; height: 35px; background: url(./img/avatar-user-4.jpg); background-size: cover; position: absolute; margin-left: -50px; margin-top: -6px;}
 
 #avatar-user-1::after,
 #avatar-user-2::after,

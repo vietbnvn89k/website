@@ -116,3 +116,4 @@ function OpenInputHeader() {
     inputHeader.classList.toggle('open')
     arrow.classList.toggle('open')
 }
+
