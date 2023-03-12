@@ -157,14 +157,9 @@ html, body {width: 100%;height: 100%;}
 }
 
 #new-playlist {
-    display: none;
-}
-
-#new-playlist.open {
     width: 350px;
     height: 300px;
     background-color: #34224F;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -174,6 +169,11 @@ html, body {width: 100%;height: 100%;}
     position: fixed;
     z-index: 2;
     border-radius: 20px;
+    display: none;
+}
+
+#new-playlist.open {
+    display: flex;
     animation: animation-open-new-playlist 1s;
 }
 
