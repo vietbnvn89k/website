@@ -39,3 +39,20 @@ play.addEventListener('click', Play)
 pause.addEventListener('click', Pause)
 
 video.addEventListener('click', OpenFullscreen)
+
+
+
+const click_close = document.querySelector('.close-list')
+const open_playlist = document.querySelector('#infomation #part-3')
+const new_playlist = document.querySelector("#new-playlist")
+
+function Close(){
+    new_playlist.classList.remove("open")
+}
+
+function OpenNewPlaylist(){
+    new_playlist.classList.toggle("open")
+}
+
+click_close.addEventListener('click', Close)
+open_playlist.addEventListener('click', OpenNewPlaylist)

@@ -12,6 +12,10 @@ html, body {width: 100%;height: 100%;}
     font-family: Roboto-thin;
     src: url(Roboto-Thin.ttf);
 }
+@font-face {
+    font-family: Roboto-light;
+    src: url(Roboto-Light.ttf);
+}
 
 
 /* home */
@@ -134,6 +138,7 @@ html, body {width: 100%;height: 100%;}
     border-top: 1px solid #3A3344;
     display: flex;
     position: relative;
+    cursor: pointer;
 }
 
 #infomation #part-3 i {
@@ -151,6 +156,125 @@ html, body {width: 100%;height: 100%;}
     color: white;
 }
 
+#new-playlist {
+    display: none;
+}
+
+#new-playlist.open {
+    width: 350px;
+    height: 300px;
+    background-color: #34224F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 500px;
+    top: 150px;
+    position: fixed;
+    z-index: 2;
+    border-radius: 20px;
+    animation: animation-open-new-playlist 1s;
+}
+
+@keyframes animation-open-new-playlist {
+   0% {
+    width: 175px;
+    height: 150px;
+   }
+   50% {
+    width: 350px;
+    height: 150px;
+   }
+   100% {
+    width: 350px;
+    height: 300px;
+   } 
+}
+
+#title-new-playlist {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+}
+
+#title-new-playlist h3 {
+    color: white;
+    font-size: 20px;
+}
+
+#title-new-playlist i {
+    font-size: 25px;
+    color: #DDDCDE;
+    position: absolute;
+    right: 20px;
+}
+
+#title-new-playlist i:hover {
+    color: white;
+}
+
+#new-playlist input {
+    width: 80%;
+    height: 15%;
+    border-radius: 30px;
+    background-color: #483860;
+    border: none;
+}
+
+#new-playlist input::placeholder {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(226, 226, 226);
+}
+
+#public-playlist {
+    width: 70%;
+    height: 20%;
+    margin-top: 20px;
+}
+
+#public-playlist h4,
+#random-music h4 {
+    color: #F0EEF2;
+    font-family: Roboto-light;
+}
+
+#random-music {
+    width: 70%;
+    height: 20%;
+}
+
+#random-music h5,
+#public-playlist h5 {
+    color: #907cb1;
+    margin-top: 5px;
+    font-family: Roboto-thin;
+}
+
+#create-playlist {
+    width: 80%;
+    height: 13%;
+    border-radius: 15px;
+    background-color: #5e3a7c;
+    position: absolute;
+    bottom: 10px;
+}
+
+#create-playlist h4 {
+    color: rgb(182, 182, 182);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: no-drop;
+}
 /* ---------right-bar--------------- */
 #right-bar {
     width: 82%;
@@ -259,7 +383,7 @@ html, body {width: 100%;height: 100%;}
 
 .square {
     width: 120px;
-    height: 160px;
+    height: 190px;
     border-radius: 5px;
     background-size: cover;
     margin-top: 50px; 
