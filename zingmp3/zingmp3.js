@@ -1,3 +1,15 @@
+const check_box = document.getElementById("accept")
+const top_bar = document.querySelector("#top-bar")
+function Check_box(){
+    if (check_box.checked == true){
+        top_bar.classList.add("remove")
+      } else {
+        top_bar.classList.remove("remove")
+      }
+}
+
+check_box.addEventListener('click', Check_box)
+
 const heart = document.querySelector('.fa-heart')
 const ellipsis = document.querySelector('.fa-ellipsis')
 function clickHeart(){
@@ -56,3 +68,4 @@ function OpenNewPlaylist(){
 
 click_close.addEventListener('click', Close)
 open_playlist.addEventListener('click', OpenNewPlaylist)
+
